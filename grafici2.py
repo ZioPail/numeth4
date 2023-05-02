@@ -1,11 +1,13 @@
 #import matplotlib
-#matplotlib.use('agg')
+#matplotlib.matplotlib_fname()
+import matplotlib
+matplotlib.use('Qt5agg')
 import matplotlib.pyplot as plt
 #import pylab 
 import numpy as np
-from mpl_toolkits import mplot3d
-from matplotlib.ticker import LinearLocator
-
+#from mpl_toolkits import mplot3d
+#from matplotlib.ticker import LinearLocator
+#from IPython.display import display
 
 
 #print(matplotlib.get_backend())
@@ -19,10 +21,12 @@ x=np.linspace(-2,2,100)
 y=np.linspace(-2,2,100)
 X,Y = np.meshgrid (x,y)
 Z=10*np.cos(X**2+Y**2)/(3+X**2+Y**2)
-figure=ax.plot_surface(X,Y,Z, cmap ='plasma', linewidth=0)
+fig=ax.plot_surface(X,Y,Z, cmap ='plasma', linewidth=0)
 #ax.view_init(45,45) #ruota il grafico
-#plt.show()
+plt.show()
+#display(fig)
 #pylab.show(block=False)
-plt.savefig("Grafici2.jpg")
+#plt.savefig("Grafici2.jpg")
+
 
 
