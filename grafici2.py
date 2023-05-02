@@ -1,7 +1,7 @@
 #import matplotlib
 #matplotlib.matplotlib_fname()
 import matplotlib
-matplotlib.use('Qt5agg')
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 #import pylab 
 import numpy as np
