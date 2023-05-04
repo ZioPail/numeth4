@@ -1,8 +1,10 @@
 #import matplotlib
 #matplotlib.matplotlib_fname()
+import matplotlib.backends
 import matplotlib
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+#plt.switch_backend('TkAgg')
 #import pylab 
 import numpy as np
 #from mpl_toolkits import mplot3d
